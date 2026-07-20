@@ -1,0 +1,61 @@
+:root {
+  --board-black: #171512;
+  --board-black-2: #201d18;
+  --ivory: #ece5d6;
+  --ivory-dim: #cfc6b3;
+  --gold: #b6934f;
+  --gold-dim: #8a723f;
+  --wine: #7c3f3a;
+  --line: rgba(236, 229, 214, 0.16);
+
+  --serif: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  color-scheme: dark;
+  color: var(--ivory-dim);
+  background: var(--board-black);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--board-black);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  color: var(--ivory);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--gold);
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--gold-dim);
+  color: var(--board-black);
+}
